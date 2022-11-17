@@ -1,0 +1,8 @@
+matriz m1 = [7,14];
+
+mapa map = m1;
+
+parede na pos [2,3] - v| , >| 
+
+
+parede na pos [5,2] - ^|

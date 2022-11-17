@@ -1,0 +1,40 @@
+# Exemplo mus vai até ao beacon e regressa à posição inicial
+
+create robot Alberto
+
+rotate at a   
+
+until true {
+
+	if (target) {
+		turn on visiting led
+	} 
+	if (front > 0.8) {
+		move 15, 15 					
+	}	
+	if (left > right) {
+		move 0, 15						
+	}
+	if (right > left) {
+		move 15, 15						
+	}
+	if (left > 0.8) {
+		move 0, 15						
+	}
+	if (right > 0.8) {
+		move 15, 15						
+	}
+}
+
+turn off visiting led
+
+turn on returning led
+#turn off returning led
+
+#turn on visiting led
+#turn off visiting led
+
+turn on end led
+#turn off end led
+
+finish
